@@ -11,7 +11,7 @@ class Account(db.Model):
     account_password = db.Column(db.String(100))
     account_username = db.Column(db.String(100))
     account_phoneNumber = db.Column(db.String(100))
-    account_DOB = db.Column(db.date)
+    account_DOB = db.Column(db.Date)
 
     def __init__(self, account_fName, account_lName, account_email, account_password, account_username, account_phoneNumber, account_DOB ):
         self.account_fName = account_fName
